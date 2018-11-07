@@ -18,6 +18,7 @@ if [ "$checksub" == "" ]; then
 fi
 az account set --subscription  $sub
 
+echo "subscription : $sub"
 BASEDIR=$(dirname $0)
 
 DATADIR="$BASEDIR/data"
@@ -56,6 +57,8 @@ done
 
 
 az logout
+echo
+
 exit
 
 
