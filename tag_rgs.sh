@@ -7,6 +7,7 @@ if [ $# != 1 ]; then
         exit
 fi
 
+
 sub=$1
 
 az login --identity >/dev/null
